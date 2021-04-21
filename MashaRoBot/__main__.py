@@ -75,7 +75,8 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 `Hellow My name is` *🎀 ESTHER 🎀*
-`I'm here to help you manage your groups! Hit` *📚Commands* `button below to find out more about how to use me to my full potential.` 
+`I'm here to help you manage your groups! Hit` *Commands* `button below to find out more about how to use me to my full potential I'm here to make your group management fun and 🛸easy!
+I have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters So what are you waiting for? 👩‍✈️Add me in your groups and give full right to make me function well.` 
 """
 
 buttons = [
