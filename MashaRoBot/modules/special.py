@@ -14,7 +14,7 @@ from MashaRoBot.modules.helper_funcs.chat_status import is_user_ban_protected, u
 
 import random, re
 import telegram
-import tg_bot.modules.sql.users_sql as sql
+import MashaRoBot.modules.sql.users_sql as sql
 from MashaRoBot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, LOGGER
 from MashaRoBot.modules.helper_funcs.filters import CustomFilters
 from MashaRoBot.modules.disable import DisableAbleCommandHandler
