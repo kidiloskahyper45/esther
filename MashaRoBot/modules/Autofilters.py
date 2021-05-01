@@ -8,7 +8,7 @@ Currently support:
      - Documents
      - Music
 <b> Setting up </b>
-1) Add @ to your channel
+1) Add @mis_estherbot to your channel
 2) Make bot admin with full permissions
 2) Go back to your group
 <b> Commands </b>
