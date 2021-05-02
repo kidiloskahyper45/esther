@@ -13,7 +13,6 @@ feedparser
 hachoir
 pynewtonmath
 spongemock
-zalgo-text
 geopy
 nltk
 psutil
@@ -57,13 +56,12 @@ search_engine_parser
 pytz
 # General
 
-pyrogram==1.1.13
 aiogram
 
 # DBs
 redis
 aioredis # Redis memery storage fom aiogram
-pymongo
+
 motor
 
 dnspython # needed to connect to cloud MongoDB instances
@@ -91,14 +89,9 @@ async-timeout
 regex
 bs4
 lxml
-spamwatch
 httpx[http2]
-wikipedia
-coffeehouse
-PyDictionary==2.0.1
 google-trans-new==1.1.9
 hachoir
-telegraph
 faker
 gtts
 geopy
@@ -110,8 +103,6 @@ html5lib
 feedparser
 tldextract
 
-#Pyrogram
-tgCrypto>=1.2.2
 
 #Old DB Processes
 psycopg2-binary==2.8.6
@@ -131,7 +122,6 @@ zalgo_text
 cowpy 
 fontTools
 nltk
-emoji
 
 #Deezer
 wget
@@ -160,4 +150,3 @@ chromedriver==2.24.1
 
 #Updator
 gitpython==3.1.11
-heroku3==4.2.3
