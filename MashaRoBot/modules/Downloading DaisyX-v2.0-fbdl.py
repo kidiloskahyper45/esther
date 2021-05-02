@@ -18,8 +18,8 @@ from datetime import datetime
 import requests
 from telethon import events
 
-from DaisyX.function.telethonbasics import is_admin
-from DaisyX.services.telethon import tbot
+from MashaRoBot.function.telethonbasics import is_admin
+from MashaRoBot.services.telethon import tbot
 
 
 def main(url, filename):
@@ -76,12 +76,12 @@ async def _(event):
         await event.reply("Video Downloaded Successfully. Starting To Upload.")
 
         kk = f"{filename}.mp4"
-        caption = f"Facebook Video downloaded Successfully by @DaisyXBot.\nSay hi to devs @DaisySupport_Official."
+        caption = f"Facebook Video downloaded Successfully by @mis_estherbot.\nSay hi to devs @am_dq_fan."
 
         await tbot.send_file(
             event.chat_id,
             kk,
-            caption="Facebook Video downloaded Successfully by @DaisyXBot.\nSay hi to devs @DaisySupport_Official.",
+            caption="Facebook Video downloaded Successfully by @mis_estherbot.\nSay hi to devs @am_dq_fan.",
         )
         os.system(f"rm {kk}")
     else:
