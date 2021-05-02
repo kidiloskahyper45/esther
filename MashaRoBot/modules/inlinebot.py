@@ -32,7 +32,7 @@ async def inline_handler(event):
     query = event.text
     if not query:
         results = builder.article(
-            title="Hello, I'm Daisy! Touch for help!",
+            title="Hello, I'm EASTER ! CLICK for help!",
             text=f"Wonder What All You Can Do With Me? Click Below To Know More.",
             buttons=custom.Button.inline("Explore!", data="explore"),
         )
@@ -42,7 +42,7 @@ async def inline_handler(event):
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"explore")))
 async def explore(event):
-    tbot_username = "DaisyXBot"
+    tbot_username = "@mis_estherbot"
     LEGENDX = [
         [
             Button.switch_inline("Youtube", query="yt", same_peer=True),
