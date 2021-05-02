@@ -23,7 +23,7 @@ from search_engine_parser import GoogleSearch
 from telethon import Button, custom, events
 from youtube_search import YoutubeSearch
 
-from DaisyX.services.telethon import tbot as tgbot
+from MashaRoBot.services.telethon import tbot as tgbot
 
 
 @tgbot.on(events.InlineQuery)
