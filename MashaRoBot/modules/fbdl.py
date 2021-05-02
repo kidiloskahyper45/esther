@@ -18,7 +18,7 @@ from datetime import datetime
 import requests
 from telethon import events
 
-from MashaRoBot.events.telethonbasics import is_admin
+from MashaRoBot.services.telethonbasics import is_admin
 from MashaRoBot.services.telethon import tbot
 
 
