@@ -1,12 +1,12 @@
 {
-      "name": "MashaRoBot",
+      "name": "ESTER",
       "description": "Telegram group management bot.",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Masha"
+         "ESTER"
       ],   
    "repository": "https://github.com/Mr-Dark-Prince/MashaRoBot",
    "addons": [
@@ -194,6 +194,11 @@
          "required": false,
          "value": ""
       }
-      
+      "REM_BG_API_KEY": {
+         "description":"Required for rmbg. Get yours from  remove.bg", 
+         "required":false, 
+         "Value":""
+     }
+
    }
 }
