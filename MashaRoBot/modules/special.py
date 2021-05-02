@@ -15,7 +15,7 @@ from MashaRoBot.modules.helper_funcs.chat_status import is_user_ban_protected, u
 import random, re
 import telegram
 import MashaRoBot.modules.sql.users_sql as sql
-from MashaRoBot import dispatcher, OWNER_ID, DEV_USERS, SUPPORT_USERS, LOGGER
+from MashaRoBot import dispatcher, OWNER_ID, DEV_USERS, DRAGONS, LOGGER
 from MashaRoBot.modules.helper_funcs.filters import CustomFilters
 from MashaRoBot.modules.disable import DisableAbleCommandHandler
 
@@ -81,7 +81,7 @@ def slist(bot: Bot, update: Update):
     message = update.effective_message
     text1 = "My sudo users are:"
     text2 = "My support users are:"
-    for user_id in SUDO_USERS:
+    for user_id in DEV_USERS:
         try:
             user = bot.get_chat(user_id)
             name = "[{}](tg://user?id={})".format(user.first_name + (user.last_name or ""), user.id)
@@ -91,7 +91,7 @@ def slist(bot: Bot, update: Update):
         except BadRequest as excp:
             if excp.message == 'Chat not found':
                 text1 += "\n - ({}) - not found".format(user_id)
-    for user_id in SUPPORT_USERS:
+    for user_id in DRAGONS:
         try:
             user = bot.get_chat(user_id)
             name = "[{}](tg://user?id={})".format(user.first_name + (user.last_name or ""), user.id)
