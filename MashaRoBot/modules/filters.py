@@ -29,12 +29,12 @@ from async_timeout import timeout
 from bson.objectid import ObjectId
 from pymongo import UpdateOne
 
-from DaisyX import bot, loop
-from DaisyX.decorator import register
-from DaisyX.modules import LOADED_MODULES
-from DaisyX.services.mongo import db
-from DaisyX.services.redis import redis
-from DaisyX.utils.logger import log
+from MashaRoBot import bot, loop
+from MashaRoBot.decorator import register
+from MashaRoBot.modules import LOADED_MODULES
+from MashaRoBot.services.mongo import db
+from MashaRoBot.services.redis import redis
+from MashaRoBot.utils.logger import log
 
 from .utils.connections import chat_connection, get_connected_chat
 from .utils.language import get_string, get_strings_dec
