@@ -19,8 +19,8 @@ import requests
 from bs4 import *
 from pyrogram import filters
 
-from DaisyX.function.pluginhelpers import admins_only, get_text
-from DaisyX.services.pyrogram import pbot
+from MashaRoBot.function.pluginhelpers import admins_only, get_text
+from MashaRoBot.services.pyrogram import pbot
 
 
 def download_images(images):
@@ -84,7 +84,7 @@ async def logogen(client, message):
         )
     name = lmao[0]
     mainne(name, typeo)
-    pate = "logo@DaisyXBOT.jpg"
+    pate = "logo@mis_estherbot.jpg"
     await client.send_photo(message.chat.id, pate)
     try:
         os.remove(pate)
