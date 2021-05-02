@@ -193,7 +193,7 @@
          "description": "Required for wallpaper. Get your's from https://wall.alphacoders.com/",
          "required": false,
          "value": ""
-      }
+      }, 
       "REM_BG_API_KEY": {
          "description":"Required for rmbg. Get yours from  remove.bg", 
          "required":false, 
