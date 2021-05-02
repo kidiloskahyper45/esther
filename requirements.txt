@@ -56,7 +56,7 @@ bing_image_downloader
 search_engine_parser
 pytz
 # General
-telethon~=1.17.0
+
 pyrogram==1.1.13
 aiogram
 
