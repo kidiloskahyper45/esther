@@ -5,14 +5,14 @@
 
 from pyrogram import filters
 
-from DaisyX.db.mongo_helpers.filterdb import (
+from MashaRoBot.db.mongo_helpers.filterdb import (
     delete_filter,
     get_filter,
     get_filters_names,
     save_filter,
 )
-from DaisyX.function.pluginhelpers import member_permissions
-from DaisyX.services.pyrogram import pbot as app
+from MashaRoBot.function.pluginhelpers import member_permissions
+from MashaRoBot.services.pyrogram import pbot as app
 
 
 @app.on_message(filters.command("filter") & ~filters.edited & ~filters.private)
