@@ -86,10 +86,8 @@ babel
 captcha
 async-timeout
 regex
-bs4
 lxml
 httpx[http2]
-google-trans-new==1.1.9
 hachoir
 faker
 gtts
@@ -120,10 +118,8 @@ selenium
 zalgo_text 
 cowpy 
 fontTools
-nltk
 
 #Deezer
-wget
 asyncio
 
 #Markup
