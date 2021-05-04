@@ -34,7 +34,7 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
-    fname2 = "LogoByInnexiabot.png"
+    fname2 = "LogoByestherbot.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By innexia")
     if os.path.exists(fname2):
@@ -74,7 +74,7 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
-    fname2 = "LogoByInnexiabot.png"
+    fname2 = "LogoByestherbot.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By esther")
     if os.path.exists(fname2):
