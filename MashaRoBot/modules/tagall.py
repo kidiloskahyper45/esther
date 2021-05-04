@@ -9,8 +9,8 @@
 
 from pyrogram import filters
 
-from MashaRobot.function.pluginshelper import admins_only, get_text
-from MashaRobot import pbot
+from MashaRoBot.function.pluginshelper import admins_only, get_text
+from MashaRoBot import pbot
 
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
