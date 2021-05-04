@@ -1,8 +1,9 @@
-from MashaRoBot import CMD_HELP
 from MashaRoBot.events import register
-from MashaRoBot import tbot, OWNER_ID
-import os
+from MashaRoBot import OWNER_ID
+from MashaRoBot import telethn as tbot
+import os 
 from PIL import Image, ImageDraw, ImageFont
+
 
 @register(pattern="^/logo ?(.*)")
 async def lego(event):
@@ -10,36 +11,72 @@ async def lego(event):
  if event.sender_id == OWNER_ID:
      pass
  else:
-     if event.is_group:
-       await event.reply('Currently This Module Only Works in my [PM](tg://user?id=1624337697)')
-       return
-     else:
-       pass
- if not quew:
+     
+    if not quew:
        await event.reply('Provide Some Text To Draw!')
        return
- else:
+    else:
        pass
- await event.reply('Drawing Text On Pic.Weit!')
+ await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./MashaRoBot/resources/Blankmeisnub.jpg')
+    img = Image.open('./MashaRoBot/resources/blackbg.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./MashaRoBot/resources/Chopsic.otf", 160)
+    font = ImageFont.truetype("./MashaRoBot/resources/Chopsic.otf", 330)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
     draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="black", stroke_width=15, stroke_fill="yellow")
-    fname2 = "LogoByAnie.png"
+    draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
+    fname2 = "LogoByInnexiabot.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By Harita")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By innexia")
+    if os.path.exists(fname2):
+            os.remove(fname2)
+ except Exception as e:
+   await event.reply(f'Error Report @am_dq_fan, {e}')
+
+
+
+   
+@register(pattern="^/wlogo ?(.*)")
+async def lego(event):
+ quew = event.pattern_match.group(1)
+ if event.sender_id == OWNER_ID:
+     pass
+ else:
+     
+    if not quew:
+       await event.reply('Provide Some Text To Draw!')
+       return
+    else:
+       pass
+ await event.reply('Creating your logo...wait!')
+ try:
+    text = event.pattern_match.group(1)
+    img = Image.open('./MashaRoBot/resources/blackbg.jpg')
+    draw = ImageDraw.Draw(img)
+    image_widthz, image_heightz = img.size
+    pointsize = 500
+    fillcolor = "white"
+    shadowcolor = "blue"
+    font = ImageFont.truetype("./MashaRoBot/resources/Maghrib.ttf", 1000)
+    w, h = draw.textsize(text, font=font)
+    h += int(h*0.21)
+    image_width, image_height = img.size
+    draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
+    x = (image_widthz-w)/2
+    y= ((image_heightz-h)/2+6)
+    draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
+    fname2 = "LogoByInnexiabot.png"
+    img.save(fname2, "png")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By esther")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
@@ -49,11 +86,8 @@ file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
-__help__ = """
- In Beta!.
- - /logo <text>
-Module Not Finished.!
-Send Logo Bgs and Fonts to Bot DM! will add to module.
-"""
 
-CMD_HELP.update({file_helpo: [file_helpo, __help__]})
+__help__ = """
+ ❍ /logo text :  Create your logo with your name
+ """
+__mod_name__ = "Logo"
