@@ -95,7 +95,7 @@ if ENV:
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
-    tbot = TelegramClient(None, API_KEY, API_HASH)
+    tbot = TelegramClient(None, API_ID, API_HASH)
     WALL_API = os.environ.get("WALL_API", None)
     REM_BG_API_KEY = os.environ.get('REM_BG_API_KEY', None)
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", None)
