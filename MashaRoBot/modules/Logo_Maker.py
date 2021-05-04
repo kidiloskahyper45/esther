@@ -23,13 +23,13 @@ async def lego(event):
  await event.reply('Drawing Text On Pic.Weit!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./Harita/resources/Blankmeisnub.jpg')
+    img = Image.open('./MashaRoBot/resources/Blankmeisnub.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./Harita/resources/Chopsic.otf", 160)
+    font = ImageFont.truetype("./MashaRoBot/resources/Chopsic.otf", 160)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -43,7 +43,7 @@ async def lego(event):
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @HaritaSupport, {e}')
+   await event.reply(f'Error Report @am_dq_fan, {e}')
 
 file_help = os.path.basename(__file__)
 file_help = file_help.replace(".py", "")
