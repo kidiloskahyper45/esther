@@ -139,6 +139,16 @@ pydub
 #Lel
 cloudmersive_virus_api_client==3.0.1
 chromedriver==2.24.1
+html2text
 
 #Updator
 gitpython==3.1.11
+
+#profanity (Credits to Julia)
+better_profanity
+textblob 
+nudepy
+
+
+
+motor
