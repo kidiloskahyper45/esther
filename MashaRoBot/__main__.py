@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hellow My name is` *🎀 ESTHER 🎀*
+`Hellow My name is` *Nottey possum*
 `I'm here to help you manage your groups! Hit` *Commands* `button below to find out more about how to use *me📢* to my full potential I'm here to make your group management fun and 🛸easy!
 I have lots of handy features, such as flood control, a warning system, a note keeping system, and even replies on predetermined filters.` 
 """
@@ -82,7 +82,7 @@ I have lots of handy features, such as flood control, a warning system, a note k
 buttons = [
     [
         InlineKeyboardButton(
-            text="⚡ ADD ESTHE TO YOUR GROUP ⚡", url="t.me/mis_estherbot?startgroup=true"),
+            text="⚡ ADD Nottey possum TO YOUR GROUP ⚡", url="t.me/Nottey_possumAdminbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="®ABOUT", callback_data="masha_"),
@@ -92,7 +92,7 @@ buttons = [
         InlineKeyboardButton(
             text=" Sucide", callback_data="source_"),
         InlineKeyboardButton(
-            text="Suscribe📣", url="https://t.me/rosebakthan"
+            text="Suscribe📣", url="https://t.me/Notteypossum"
         ),
     ],
 ]
@@ -347,16 +347,16 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *ESTHER*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Nottey*, a powerful group management bot built to help you manage your group easily.
                  🚨 I can restrict users.
                  🚨 I can greet users with customizable welcome messages and even set a group's rules.
                  🚨 I have an advanced anti-flood system.
                  🚨 I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  🚨 I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  🚨 I check for admins' permissions before executing any command and more stuffs
-                 \n_esther's licensed under the GNU General Public License v3.0_
+                 \n_Notteys licensed under the GNU General Public License v3.0_
                  .
-                 If you have any question about esther, let us know at @rosebakthan.""",
+                 If you have any question about esther, let us know at.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -382,7 +382,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *esther*
+            text=""" Hi..🤗 I'm *Nottey*
                  \nHere is the [thenga) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
