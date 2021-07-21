@@ -82,7 +82,7 @@ I have lots of handy features, such as flood control, a warning system, a note k
 buttons = [
     [
         InlineKeyboardButton(
-            text="⚡ ADD Nottey possum TO YOUR GROUP ⚡", url="t.me/Nottey_possumAdminbot?startgroup=true"),
+            text="ADD Nottey possum TO YOUR GROUP ", url="t.me/Nottey_possumAdminbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="®ABOUT", callback_data="masha_"),
@@ -92,7 +92,7 @@ buttons = [
         InlineKeyboardButton(
             text=" Sucide", callback_data="source_"),
         InlineKeyboardButton(
-            text="Suscribe📣", url="https://t.me/Notteypossum"
+            text="Suscribe📣", url="https://t.me/Nottypossum"
         ),
     ],
 ]
